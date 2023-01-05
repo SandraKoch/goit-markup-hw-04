@@ -6,6 +6,7 @@
   --secondary-color: #757575;
   --dark-background-color: #2f303a;
   --grey-backgroud-color: #f5f4fa;
+  --active-color: #2196f3;
 }
 
 body {
@@ -39,7 +40,7 @@ body {
 }
 
 .logo__span {
-  color: #2196f3;
+  color: var(--active-color);
 }
 
 .link {
@@ -82,7 +83,7 @@ body {
 .navigation__item:hover,
 .navigation__item:focus,
 .navigation__item:active {
-  color: #2196f3;
+  color: var(--active-color);
 }
 
 .nav-contact {
@@ -91,14 +92,6 @@ body {
   margin-left: auto;
 }
 
-.nav-contact__item:focus,
-.nav-contact__item:hover,
-.nav-contact__item:active {
-  color: #2196f3;
-}
-
-/* fill: #2196f3; */
-
 .nav-contact__item {
   display: flex;
   list-style: none;
@@ -106,16 +99,18 @@ body {
   padding-right: 0;
 }
 
+.nav-contact__item:focus *,
+.nav-contact__item:hover *,
+.nav-contact__item:active * {
+  color: var(--active-color);
+  fill: var(--active-color);
+}
+
+/* (*) - nadaję dzieciom .nav-contact__item, tj. <svg> oraz <a> */
+
 .nav-contact__icon {
   fill: var(--secondary-color);
   margin-right: 10px;
-}
-
-/*znajdź rozwiązanie problemu */
-.nav-contact__icon:hover,
-.nav-contact__icon:focus,
-.nav-contact__icon:active {
-  fill: #2196f3;
 }
 
 .section {
@@ -130,6 +125,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: none;
 }
 
 .hero-section__headline {
