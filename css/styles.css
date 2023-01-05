@@ -97,11 +97,25 @@ body {
   color: #2196f3;
 }
 
+/* fill: #2196f3; */
+
 .nav-contact__item {
   display: flex;
   list-style: none;
   padding-left: 50px;
   padding-right: 0;
+}
+
+.nav-contact__icon {
+  fill: var(--secondary-color);
+  margin-right: 10px;
+}
+
+/*znajdź rozwiązanie problemu */
+.nav-contact__icon:hover,
+.nav-contact__icon:focus,
+.nav-contact__icon:active {
+  fill: #2196f3;
 }
 
 .section {
@@ -192,7 +206,7 @@ body {
 .our-team-headline {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1, 17; /*42px*/
+  line-height: 1.17; /*42px*/
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 50px;
@@ -230,6 +244,15 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   padding-top: 10px;
+}
+
+.our-clients-headline {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17; /*42px*/
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
 }
 
 .footer {
