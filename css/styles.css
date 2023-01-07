@@ -226,7 +226,9 @@ body {
 }
 
 .card__description {
-  padding: 30px 0;
+  padding: 30px 32px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .card__name {
@@ -245,6 +247,37 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   padding-top: 10px;
+}
+
+/* .social-links {
+  padding-bottom:
+} */
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  fill: var(--icons-color);
+  list-style-type: none;
+  padding-top: 16px;
+}
+
+.social-links__icon {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+}
+
+.social-links__icon:hover {
+  fill: #ffffff;
+  background-color: var(--active-color);
+}
+
+.social-links__item {
+  justify-items: center;
+  width: 20px;
+  height: 20px;
 }
 
 .our-clients__headline {
