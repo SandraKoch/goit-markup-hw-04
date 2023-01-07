@@ -168,11 +168,22 @@ body {
   list-style: none;
 }
 
+.asset__icon-wrapper {
+  background-color: var(--grey-backgroud-color);
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+}
+.asset__icon {
+}
+
 .asset__name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14; /*16px*/
   letter-spacing: 0.03em;
+  margin-top: 30px;
 }
 
 .asset__text {
@@ -180,6 +191,7 @@ body {
   line-height: 1.71; /*24px*/
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin-top: 10px;
 }
 
 .services {
