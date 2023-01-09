@@ -319,16 +319,13 @@ body {
   align-items: center;
 }
 
-.our-clients__icon {
-  fill: var(--icons-color);
-}
-
 .our-clients__link {
   width: 170px;
   height: 92px;
   border: 1px solid var(--icons-color);
   border-radius: 4px;
   padding: 16px 32px;
+  fill: var(--icons-color);
 }
 
 .our-clients__link:hover,
@@ -338,17 +335,14 @@ body {
   fill: var(--active-color);
 }
 
-/* Działa tylko po najechaniu na ikonę */
+/* Works only when you hover over the icon */
 
-/* .our-clients__icon:hover,
-.our-clients__icon:active,
-.our-clients__icon:focus {
+/* .our-clients__icon:hover,{
   fill: var(--active-color);
 } */
 
-/* .our-clients__link .our-clients__icon:hover {
-  fill: var(--active-color);
-} */
+/* Styles <svg> with the class .our-clients__icon were overriding the styles given in th tag <a> with the class .our-clients__link 
+Therfore fill:(--icons-color) included in the same class (on which hover/focus is put) changes when it's :hover'ed */
 
 .footer {
   background-color: var(--dark-background-color);
