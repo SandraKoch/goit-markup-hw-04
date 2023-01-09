@@ -346,7 +346,9 @@ body {
   fill: var(--active-color);
 } */
 
-/* .our-clients__link .our-clients__icon:hover {fill: var(--active-color);}} */
+/* .our-clients__link .our-clients__icon:hover {
+  fill: var(--active-color);
+} */
 
 .footer {
   background-color: var(--dark-background-color);
