@@ -338,12 +338,15 @@ body {
   fill: var(--active-color);
 }
 
+/* Działa tylko po najechaniu na ikonę */
+
 /* .our-clients__icon:hover,
 .our-clients__icon:active,
-.our-clients__icon:focus,{
+.our-clients__icon:focus {
   fill: var(--active-color);
-  border-color: var(--active-color);
 } */
+
+/* .our-clients__link .our-clients__icon:hover {fill: var(--active-color);}} */
 
 .footer {
   background-color: var(--dark-background-color);
