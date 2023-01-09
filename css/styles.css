@@ -266,40 +266,38 @@ body {
   padding-top: 10px;
 }
 
-/* .social-links {
-  padding-bottom:
-} */
+/* ____________________social-links______________________ */
 
 .social-links {
   display: flex;
   justify-content: space-around;
-  fill: var(--icons-color);
+  align-items: baseline;
   list-style-type: none;
-  padding-top: 16px;
+  margin-top: 16px;
 }
 
-.social-links__icon {
+.social-links__element {
+  display: flex;
+  align-items: center;
+}
+
+.social-links__link {
+  fill: var(--icons-color);
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  width: 44px;
-  height: 44px;
   padding: 12px;
 }
 
-.social-links__icon:hover,
-.social-links__icon:active,
-.social-links__icon:focus,
-.social-links__icon > a:active,
-.social-links__icon > a:focus,
-.social-links__icon > a:hover {
+.social-links__link:hover,
+.social-links__link:active,
+.social-links__link:focus {
   fill: #ffffff;
   background-color: var(--active-color);
 }
 
-.social-links__item {
-  justify-items: center;
+.social-links__icon {
   width: 20px;
   height: 20px;
+  display: block;
 }
 
 .our-clients__headline {
@@ -317,6 +315,15 @@ body {
 }
 
 .our-clients__icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.our-clients__icon {
+  fill: var(--icons-color);
+}
+
+.our-clients__link {
   width: 170px;
   height: 92px;
   border: 1px solid var(--icons-color);
@@ -324,19 +331,19 @@ body {
   padding: 16px 32px;
 }
 
-.our-clients__icon {
-  fill: var(--icons-color);
+.our-clients__link:hover,
+.our-clients__link:focus,
+.our-clients__link:active {
+  border-color: var(--active-color);
+  fill: var(--active-color);
 }
 
-.our-clients__icon:hover,
+/* .our-clients__icon:hover,
 .our-clients__icon:active,
-.our-clients__icon:focus,
-.our-clients__icon-wrapper:active,
-.our-clients__icon-wrapper:hover,
-.our-clients__icon-wrapper:focus {
+.our-clients__icon:focus,{
   fill: var(--active-color);
   border-color: var(--active-color);
-}
+} */
 
 .footer {
   background-color: var(--dark-background-color);
@@ -386,8 +393,6 @@ body {
 }
 
 .social {
-  width: 206px;
-  height: 80px;
   margin-top: 72px;
   margin-left: 70px;
 }
@@ -402,29 +407,38 @@ body {
   margin-bottom: 20px;
 }
 
-.social__icons {
+.social__list {
   display: flex;
   justify-content: space-between;
-  fill: #ffffff;
   list-style-type: none;
+  align-items: baseline;
 }
 
-.social__icon {
+.social__element {
+  display: flex;
+  align-items: center;
+}
+
+.social__link {
+  fill: #ffffff;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  width: 44px;
-  height: 44px;
   padding: 12px;
 }
 
-.social__icon:hover,
-.social__icon:active,
-.social__icon:focus {
-  background-color: var(--active-color);
+.social__element + .social__element {
+  margin-left: 10px;
 }
 
-.social__item {
-  justify-items: center;
+.social__link:hover,
+.social__link:active,
+.social__link:focus {
+  background-color: var(--active-color);
+  fill: #ffffff;
+}
+
+.social__icon {
+  display: block;
   width: 20px;
   height: 20px;
 }
